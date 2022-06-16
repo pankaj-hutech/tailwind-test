@@ -1,6 +1,6 @@
 import React , {useState} from "react";
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import { Link, animateScroll as scroll, } from 'react-scroll'
+import { Link , } from 'react-scroll'
 
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
     
 
     return (
-        <div className="w-screen h-[70px] x-10 fixed  z-50 bg-zinc-200 drop-shadow-lg">
+        <div className="w-screen h-[70px] x-10 fixed  z-50 bg-zinc-200 drop-shadow-lg ">
             <div className="px-6 flex justify-between items-center w-full h-full">
                 <div className="flex items-center">
                     <h1 className="text-3xl font-bold mr-4 sm:text-4xl" >BRAND</h1>
@@ -33,7 +33,7 @@ const Navbar = () => {
                 </div>
             </div>
             
-            <ul className={!showNav ? "hidden" : "absolute bg-zinc-200 w-full px-8 "}>
+            <ul className={!showNav ? "hidden" : "absolute bg-zinc-200 w-full px-8  "}>
                 <li className="border-b-2 border-zinc-300 w-full">
                     <Link onClick={() => menuHandler()} to="Home" smooth={true} offset={""} > Home </Link>
                 </li>
