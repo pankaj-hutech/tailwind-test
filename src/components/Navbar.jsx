@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <div className="w-screen h-[70px] x-10 fixed  z-50 bg-zinc-200 drop-shadow-lg ">
-            <div className="px-6 flex justify-between items-center w-full h-full">
+            <div className="px-3 flex justify-between items-center w-full h-full">
                 <div className="flex items-center">
                     <h1 className="text-3xl font-bold mr-4 sm:text-4xl" >BRAND</h1>
                     <ul className="hidden md:flex">
@@ -27,7 +27,7 @@ const Navbar = () => {
                     <button className="border-none  bg-transparent text-black mr-4"> Sign in </button>
                     <button className="px-8 py-2">Sign up</button>
                 </div>
-                <div className="md:hidden mr-8 " onClick={() => menuHandler()}>
+                <div className="md:hidden mr-2 " onClick={() => menuHandler()}>
                     {!showNav ? <MenuIcon  className="w-5" /> : <XIcon className="w-5" />}
                     
                 </div>
